@@ -7,8 +7,8 @@ require('dotenv').config();
 const app = express();
 const port = process.env.PORT || 8000;
 
-const accountSid = process.env.TWILIO_ACCOUNT_SID || "ACa9b331c3964c172337d0ed8bd5626c0e";
-const authToken = process.env.TWILIO_AUTH_TOKEN || "db5c411b512e01e9b8f943c06c62658e";
+const accountSid = "ACa9b331c3964c172337d0ed8bd5626c0e";
+const authToken = "db5c411b512e01e9b8f943c06c62658e";
 
 if (!accountSid || !authToken) {
   throw new Error('Twilio account SID and auth token must be provided.');
